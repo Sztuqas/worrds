@@ -24,9 +24,26 @@ export class AppComponent {
   words: Word[] = WORDS;
   title = 'LetsWords';
   randomNumber: number;
+  inWord: any;
+
   constructor() {
+    this.inWord="";
     this.randomNumber = Math.floor(Math.random()*this.words.length);
-    console.log(this.randomNumber)
+
+      }
+  compareWord() {
+    const index = this.words.findIndex(word => word.english === this.inWord);
+    if (index===this.randomNumber) {
+      console.log("Poprawna odpowiedź");
+      window.location.reload();
+      this.inWord="";
+    } else {
+      console.log("Źle");
+      this.inWord="";
+    }
+
   }
-}
+  }
+
+
 
