@@ -21,8 +21,6 @@ import { WORDS } from './models/database';
   styleUrl: './app.component.css',
 })
 export class AppComponent {
-words: Word[] = WORDS;
+  words: Word[] = WORDS;
   title = 'LetsWords';
 }
-
-

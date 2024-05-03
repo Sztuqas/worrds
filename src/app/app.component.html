@@ -10,12 +10,10 @@
 
   <div class="word">
     <div class="interfaceContainer">
-      @for (word of words; track word; let index = $index){
-      <li>
-        <p class="displayWord" >
-        {{word.polish}} : {{word.english}}
-      </p>
-      </li>
+      @for (word of words; track word; let index = $index) {
+        <li>
+          <p class="displayWord">{{ word.polish }} : {{ word.english }}</p>
+        </li>
       }
       <input type="text" class="inputWord" />
       <button mat-fab color="primary" class="doneButton1">
@@ -24,5 +22,3 @@
     </div>
   </div>
 </div>
-
-
