@@ -7,49 +7,46 @@
 
 .container{
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction:column;
+  align-content: center;
+  justify-content: center;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
   max-width: 1200px;
   background-color: darkgrey;
-  box-sizing: content-box;
   border-radius: 20px;
+
 }
 .nav{
   display:flex;
-  width: 100%;
   flex-direction: row;
-  justify-content: space-around;
-  box-sizing: content-box;
+  justify-content: space-between;
   padding: 10px;
+
 }
 .word{
 padding: 10px;
+  display: flex;
 }
 
-.interfaceContainer{
-display: flex;
-  justify-items: center;
-  flex-direction: column;
-}
+
 
 .displayWord{
-  display: flex;
-  justify-content: center;
+text-align: center;
 }
+
+
 .inputWord{
-  display: flex;
-  justify-items: center;
   line-height: 20px;
   margin: 20px 10px;
 }
-.doneButton{
+
+
+.doneButton1{
   padding: 10px;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
+
+
+
 }
