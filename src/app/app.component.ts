@@ -23,4 +23,10 @@ import { WORDS } from './models/database';
 export class AppComponent {
   words: Word[] = WORDS;
   title = 'LetsWords';
+  randomNumber: number;
+  constructor() {
+    this.randomNumber = Math.floor(Math.random()*this.words.length);
+    console.log(this.randomNumber)
+  }
 }
+

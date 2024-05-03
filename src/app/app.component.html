@@ -9,10 +9,10 @@
   </section>
 
   <div class="word">
-    <div class="interfaceContainer">
-      @for (word of words; track word; let index = $index) {
+    <div class="interfaceContainer" >
+      @for (word of [words[randomNumber]]; track word) {
         <li>
-          <p class="displayWord">{{ word.polish }} : {{ word.english }}</p>
+          <p class="displayWord">{{word.polish }}</p>
         </li>
       }
       <input type="text" class="inputWord" />
