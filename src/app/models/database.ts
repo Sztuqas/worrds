@@ -49,4 +49,4 @@ export  const WORDS:Word[]=[{ polish: 'jabłko', english: 'apple' },
   { polish: 'koszula', english: 'shirt' },
   { polish: 'sukienka', english: 'dress' },
   { polish: 'spódnica', english: 'skirt' },
-];]
+];
