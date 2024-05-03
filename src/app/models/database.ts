@@ -1,5 +1,6 @@
-import {Word} from "./word";
-export  const WORDS:Word[]=[{ polish: 'jabłko', english: 'apple' },
+import { Word } from './word';
+export const WORDS: Word[] = [
+  { polish: 'jabłko', english: 'apple' },
   { polish: 'dom', english: 'house' },
   { polish: 'samochód', english: 'car' },
   { polish: 'pies', english: 'dog' },

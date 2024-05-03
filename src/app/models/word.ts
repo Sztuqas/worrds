@@ -1,4 +1,4 @@
 export interface Word {
   polish: string;
-  english:string;
+  english: string;
 }
