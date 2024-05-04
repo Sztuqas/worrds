@@ -1,13 +1,5 @@
 <div class="container">
-  <section class="nav">
-    <button mat-fab color="primary" class="changerLanguage">
-      <mat-icon>language</mat-icon>
-    </button>
-    <button mat-fab color="primary" class="import">
-      <mat-icon>upload_file</mat-icon>
-    </button>
-  </section>
-
+  <app-nav></app-nav>
   <div class="word">
     <div class="interfaceContainer" >
       @for (word of [words[randomNumber]]; track word) {
@@ -15,7 +7,7 @@
           <p class="displayWord">{{word.polish }}</p>
         </li>
       }
-      <input type="text" class="inputWord" [(ngModel)]="inWord" (keydown.enter)="compareWord()" />
+      <input type="text" placeholder="wprowadź słówko" class="inputWord" [(ngModel)]="inWord" (keydown.enter)="compareWord()" />
       <button mat-fab color="primary" class="doneButton1"  (click)="compareWord()">
         <mat-icon>done</mat-icon>
       </button>

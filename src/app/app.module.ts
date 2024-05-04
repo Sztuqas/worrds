@@ -3,11 +3,12 @@ import { BrowserModule } from '@angular/platform-browser';
 import { CommonModule } from '@angular/common';
 
 import { AppComponent } from './app.component';
+import {NavComponent} from "./menu/nav/nav.component";
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, CommonModule],
+  imports: [BrowserModule, CommonModule, NavComponent],
   providers: [],
-  bootstrap: [AppComponent],
+  bootstrap: [],
 })
 export class AppModule {}

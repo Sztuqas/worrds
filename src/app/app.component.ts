@@ -6,6 +6,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { FormsModule } from '@angular/forms';
 import { Word } from './models/word';
 import { WORDS } from './models/database';
+import {NavComponent} from "./menu/nav/nav.component";
 
 @Component({
   selector: 'app-root',
@@ -16,6 +17,7 @@ import { WORDS } from './models/database';
     MatDividerModule,
     MatIconModule,
     FormsModule,
+    NavComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
