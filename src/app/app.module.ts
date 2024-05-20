@@ -4,11 +4,13 @@ import { CommonModule } from '@angular/common';
 
 import { AppComponent } from './app.component';
 import {NavComponent} from "./menu/nav/nav.component";
+import {WordListComponent} from "./word-list/word-list.component";
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
-  declarations: [AppComponent],
-  imports: [BrowserModule, CommonModule, NavComponent],
+  declarations: [AppComponent, WordListComponent],
+  imports: [BrowserModule, CommonModule, NavComponent, WordListComponent, FormsModule],
   providers: [],
-  bootstrap: [],
+  bootstrap: [AppComponent],
 })
 export class AppModule {}

@@ -1,0 +1,18 @@
+
+    <li >
+     <p class="displayWord"> {{ randomWord.polish }}</p>
+
+      <input type="text"  class="inputWord" [(ngModel)]="inWord" (keydown.enter)="checkWord()" />
+      <button mat-fab color="primary" class="doneButton1"  (click)="checkWord()">
+        <mat-icon>done</mat-icon>
+      </button>
+
+
+      <div class="displayWord" *ngIf="isMatch !== null">
+        <p *ngIf="isWordMarched()">Correct!Let's try next</p>
+        <p *ngIf="isWordNotMatched()">Incorrect. Try again.</p>
+      </div>
+
+
+    </li>
+

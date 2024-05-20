@@ -2,15 +2,7 @@
   <app-nav></app-nav>
   <div class="word">
     <div class="interfaceContainer" >
-      @for (word of [words[randomNumber]]; track word) {
-        <li>
-          <p class="displayWord">{{word.polish }}</p>
-        </li>
-      }
-      <input type="text" placeholder="wprowadź słówko" class="inputWord" [(ngModel)]="inWord" (keydown.enter)="compareWord()" />
-      <button mat-fab color="primary" class="doneButton1"  (click)="compareWord()">
-        <mat-icon>done</mat-icon>
-      </button>
+<app-word-list [word]="words"></app-word-list>
     </div>
   </div>
 </div>
