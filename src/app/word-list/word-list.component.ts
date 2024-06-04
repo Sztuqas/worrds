@@ -41,7 +41,7 @@ export class WordListComponent implements OnInit {
     }
     this.inWord= "";
   }
- isWordMarched(){
+ isWordMatched(){
    return this.isMatch !== null && this.isMatch === true ;
  }
 
